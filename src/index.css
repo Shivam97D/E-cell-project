@@ -1,0 +1,145 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background-color: #f0f4f8; 
+  color: #333;
+  font-family: 'Arial', sans-serif; 
+}
+
+/* the logo of the web page */
+.nav-bar {
+  background-color: #ffffff; 
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #007BFF; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter buttons styling */
+.filters {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.choice-button {
+  cursor: pointer;
+  background-color: #007BFF; 
+  margin: 5px 8px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ffffff; 
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.choice-button:hover {
+  background-color: #0056b3;
+}
+
+/* the cards that will be added to the dom */
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  /* background-color: orange; */
+}
+
+.course-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img {
+  width: 100%;
+  height: 50%; 
+  overflow: hidden;
+  position: relative; 
+}
+
+.actual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+/* Like icon styling */
+.like-icon {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  width: 40px; 
+  height: 40px;
+  fill: none; 
+  stroke: #007BFF; 
+  stroke-width: 2;
+  cursor: pointer;
+  transition: stroke 0.3s, transform 0.3s, fill 0.3s;
+}
+
+.like-icon.liked {
+  stroke: #FF5722; 
+}
+
+.like-icon:hover {
+  stroke: #FF5722; 
+  transform: scale(1.1); 
+}
+
+/* Card title styling */
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 5px 5px 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Card description styling */
+.card-description {
+  font-size: 14px;
+  color: #555; 
+  padding: 0 10px 10px;
+  height: 35%;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+}
+
+/* loading messege  */
+.loading {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  color: #007BFF; 
+}
